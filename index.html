@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Rock Paper Scissors Battle</h1>
+        <div id="winner-display"></div>
+        <div id="arena"></div>
+        <div class="game-controls">
+            <div class="input-group">
+                <input type="number" id="item-count" value="10" min="1" max="50">
+                <label for="item-count">items per type</label>
+            </div>
+            <button id="start-button">Start Battle</button>
+        </div>
+        <div id="counters">
+            <div class="counter rock">
+                <div class="emoji">🪨</div>
+                <div class="label">Rock</div>
+                <div class="count"><span>0</span></div>
+            </div>
+            <div class="counter paper">
+                <div class="emoji">📃</div>
+                <div class="label">Paper</div>
+                <div class="count"><span>0</span></div>
+            </div>
+            <div class="counter scissor">
+                <div class="emoji">✂️</div>
+                <div class="label">Scissors</div>
+                <div class="count"><span>0</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
